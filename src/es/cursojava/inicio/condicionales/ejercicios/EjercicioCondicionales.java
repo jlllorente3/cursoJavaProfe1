@@ -14,7 +14,7 @@ public class EjercicioCondicionales {
 
 	public static void main(String[] args) {
 		
-		String mes = "Enero";
+		String mes = "Febrero";
 		
 		if (mes.equals("Enero") ||  mes.equals("Febrero") || mes.equals("Marzo")) {
 			System.out.println("Invierno");
