@@ -22,6 +22,15 @@ public class EjemploSwitch {
 			default: System.out.println("Mes incorrecto");
 		}
 
+		
+		switch(mes.toLowerCase()) { 
+			case "enero","febrero","marzo": System.out.println("Invierno");break;
+			case "abril","mayo","junio": System.out.println("Primavera");break;
+			case "julio","agosto","septiembre":System.out.println("Verano");break;
+			case "octubre","noviembre","diciembre":System.out.println("Otoño");break;
+		default: System.out.println("Mes incorrecto");
+	}
+		
 	}
 
 }
