@@ -6,7 +6,7 @@ public class TablaMultiplicar {
 		
 		int numero = 6;
 		for (int i = 1; i <= 10; i++) {
-			System.out.println(i + "x" + numero +"="+ (i*numero));
+			System.out.println(i + " x " + numero +" = "+ (i*numero));
 		}
 		
 	}
