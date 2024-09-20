@@ -8,7 +8,7 @@ public class PruebaExcepciones {
 		int [] numeros = {1,2,3};
 		Alumno alumno1=new Alumno("N1","1A");
 		
-		try{
+		try {
 			System.out.println(numeros[2]);
 			System.out.println(alumno1.getDni());
 			int resultado = 7/0;

@@ -17,21 +17,43 @@ public class GestionFicheros {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		crearArchivo("fichero.txt");
 	}
 
-	public void crearArchivo(String nombre) {
+	public static void crearArchivo(String nombre) {
 		File archivo = new File(nombre);
-		try (BufferedWriter buffer = new BufferedWriter(new FileWriter(archivo, false))) {
-
-			buffer.append("Hola que tal amigos!\n")
-					.append("Todo bien? yo escribiendo en un archivo...\n")
-					.append("Hasta luego Lucas!\n");
-			// buffer.close();
-			System.out.println("El archivo se ha creado con éxito!");
-		} catch (IOException e) {
-			e.printStackTrace();
+		BufferedWriter buffer2 = null;
+		try {
+			FileWriter fw = new FileWriter(archivo, false);
+			buffer2 = new BufferedWriter(fw);
+			buffer2.append("Hola que tal amigos!\n")
+			.append("Todo bien? yo escribiendo en un archivo...\n")
+			.append("Hasta luego Lucas!\n");
+			
+		}catch(IOException ioe) {
+			System.out.println("Error");
+		}finally {
+			try {
+				buffer2.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
+		
+	
+		
+		//Try with resources
+//		try (BufferedWriter buffer = new BufferedWriter(new FileWriter(archivo, false))) {
+//
+//			buffer.append("Hola que tal amigos!\n")
+//					.append("Todo bien? yo escribiendo en un archivo...\n")
+//					.append("Hasta luego Lucas!\n");
+//			// buffer.close();
+//			System.out.println("El archivo se ha creado con éxito!");
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	public void crearArchivo2(String nombre) {
