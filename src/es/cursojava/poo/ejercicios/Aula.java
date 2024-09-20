@@ -10,7 +10,11 @@ public class Aula {
 		
 		String moneda = args[1];
 		
+		Alumno alumno0 = null;
+		//System.out.println(alumno0.getNombre());
+		
 		Alumno alumno1 = new Alumno();
+		//alumno1.getNombre().toUpperCase();
 		alumno1.setNombre("N1");
 		alumno1.setDni("111A");
 		alumno1.setNota(4);
