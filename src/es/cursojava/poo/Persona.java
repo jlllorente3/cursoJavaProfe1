@@ -20,6 +20,7 @@ public class Persona {
 		this.dni=dni;
 	}
 	
+
 	public Persona(String nombre, String apellidos, String dni, int edad, double peso, double altura) {
 		super();
 		this.nombre = nombre;
