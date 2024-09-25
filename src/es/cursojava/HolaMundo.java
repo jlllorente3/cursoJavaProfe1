@@ -1,8 +1,7 @@
+package es.cursojava;
 
 public class HolaMundo {
-
 	public static void main(String[] args) {
-		System.out.println("Hola Mundo21");
+		System.out.println("Hola");
 	}
-
 }
