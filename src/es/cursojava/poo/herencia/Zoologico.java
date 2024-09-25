@@ -24,6 +24,12 @@ public class Zoologico {
 			animal.comer();
 		}
 		
+		Animal animal2 = new Vaca("3","Vaca3","123124",250.6);
+		//Cast
+		((Vaca)animal2).mugir();
+		
+		Animal animal1 = new Leon("2","Leon2","123124",250.6);
+		((Vaca)animal1).beber();
 	}
 
 }

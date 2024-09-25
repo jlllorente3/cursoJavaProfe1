@@ -12,6 +12,14 @@ public class Serpiente extends Animal {
 		super(id, nombre, fechaNacimiento, peso);
 		this.venenosa = venenosa;
 	}
+	
+	public boolean isVenenosa() {
+		return venenosa;
+	}
+
+	public void setVenenosa(boolean venenosa) {
+		this.venenosa = venenosa;
+	}
 
 	@Override
 	public void comer() {

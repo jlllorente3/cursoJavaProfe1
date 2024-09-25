@@ -12,6 +12,10 @@ public class Vaca extends Animal{
 		super(id, nombre, fechaNacimiento, peso);
 		this.tipo = tipo;
 	}
+	
+	public void mugir() {
+		System.out.println("La vaca "+getNombre()+" está mugiendo");
+	}
 
 	@Override
 	public void comer() {
